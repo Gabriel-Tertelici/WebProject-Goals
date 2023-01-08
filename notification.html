@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Notification</title>
+</head>
+<header>
+    <img src="resources/logo.png" alt="Goal website logo" height="75" >
+    <hr>
+</header>
+<body>
+    <h1>Create Notification</h1>
+    <form>
+        <label for="ntext"><h3>Notification text</h3></label>
+        <textarea name="ntext" id="ntext" cols="90" rows="10"></textarea>
+        <label for="ntype"><h3>Type of notification</h3></label>
+        <table>
+            <tr>
+                <td><input type="radio" name="ntype" id="ntype" value="oneTime">One time</td>
+                <td><input type="radio" name="ntype" id="ntype" value="recurring">Recurring</td>
+            </tr>
+        </table>
+        <label for="ntime"><h3>Time at which to send the notification</h3></label>
+        <input type="datetime-local" name="ntime" id="ntime"><br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+<footer>
+    <hr>
+    <p>
+        Made by:<br>
+        Gabriel Tertelici<br>
+        Uros Gluscevic
+    </p>
+</footer>
+</html>
