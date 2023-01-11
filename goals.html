@@ -4,73 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/goals.css">
     <title>My Goals</title>
 </head>
 <body>
     <header>
         <img src="resources/logo.png" alt="Goal website logo" height="75" >
         
-        <ul id="menu_options">
-            <li>
-                <a href="createGoal.html" target="_blank" >Add a new goal</a>
-            </li>
-            <li>
-                <a href="dashboard.html" target="_blank">Go to the dashboard</a>
-            </li>
-            <li>
-                <a href="notification.html" target="_blank">Set a new notification</a>
-            </li>
-        </ul>
-
-        <hr>
+        <div id="menu_options">
+            
+                <a class="menu_items" href="createGoal.html" target="_blank" >Add a new goal</a>
+           
+                <a class="menu_items" href="dashboard.html" target="_blank">Go to the dashboard</a>
+        
+                <a class="menu_items" href="notification.html" target="_blank">Set a new notification</a>
+           
+        </div>
     </header>
 
-    <div class="goal_container">
-        <div class="goal_text">
-            <b>1. Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+    <div id="main_container">
+        <div class="goal_container">
 
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam ratione, ducimus et, deserunt nulla iusto vitae saepe dolor nobis quaerat eum, nam accusantium consequuntur ullam aperiam mollitia voluptates labore consequatur.</p>
+            <div class="goal_top">
+                <div class="goal_text">
+                    <b>1. Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+        
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam ratione, ducimus et, deserunt nulla iusto vitae saepe dolor nobis quaerat eum, nam accusantium consequuntur ullam aperiam mollitia voluptates labore consequatur.</p>
+                </div>
+    
+                <div class="goal_controls">
+                    <a href="view_goal.html" target="_blank"><button>View</button></a>
+                    <button>Delete</button>
+                </div>
+            </div>
+    
+            <div class="goal_info">
+                <progress value="10" max="100"></progress>
+    
+                <p>Deadline: dd/mm/yy</p>
+            </div>
         </div>
+    
+        <div class="goal_container">
 
-        <div class="goal_info">
-            <progress value="10" max="100"></progress>
-
-            <p>Deadline: dd/mm/yy</p>
-        </div>
-
-        <div class="goal_controls">
-            <a href="view_goal.html" target="_blank"><button>View</button></a>
-            <button>Delete</button>
+            <div class="goal_top">
+                <div class="goal_text">
+                    <b>2. Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+        
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam ratione, ducimus et, deserunt nulla iusto vitae saepe dolor nobis quaerat eum, nam accusantium consequuntur ullam aperiam mollitia voluptates labore consequatur.</p>
+                </div>
+    
+                <div class="goal_controls">
+                    <a href="view_goal.html" target="_blank"><button>View</button></a>
+                    <button>Delete</button>
+                </div>
+            </div>
+    
+            <div class="goal_info">
+                <progress value="70" max="100"></progress>
+    
+                <p>Deadline: dd/mm/yy</p>
+            </div>
+    
+            
         </div>
     </div>
 
-    <hr>
-
-    <div class="goal_container">
-        <div class="goal_text">
-            <b>2. Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
-
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam ratione, ducimus et, deserunt nulla iusto vitae saepe dolor nobis quaerat eum, nam accusantium consequuntur ullam aperiam mollitia voluptates labore consequatur.</p>
-        </div>
-
-        <div class="goal_info">
-            <progress value="70" max="100"></progress>
-
-            <p>Deadline: dd/mm/yy</p>
-        </div>
-
-        <div class="goal_controls">
-            <a href="view_goal.html" target="_blank"><button>View</button></a>
-            <button>Delete</button>
-        </div>
-    </div>
+    
 
     <footer>
-        <hr>
-        <p>
-            Made by:<br>
-            Gabriel Tertelici<br>
-            Uros Gluscevic
+        <p class="footerP">
+            Made by: Gabriel Tertelici, Uros Gluscevic
         </p>
     </footer>
 </body>

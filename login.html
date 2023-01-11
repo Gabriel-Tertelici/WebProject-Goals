@@ -3,36 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
     <title>Log-In Page</title>
 </head>
 <header>
     <img src="resources/logo.png" alt="Goal website logo" height="75" >
-    <hr>
 </header>
 <body>
    <h1>Sign In</h1>
    <form>
     <table>
         <tr>
-            <td><label for="uname"><h3>Username </h3></label></td>
-            <td><input type="text" id="uname"></td>
+            <td><label for="uname" class="label"><h3>Username</h3></label></td>
+            <td><input type="text" id="uname" class="field"></td>
         </tr>
         <tr>
-            <td><label for="passwd"><h3>Password </h3></label></td>
-            <td><input type="password" id="passwd"></td>
+            <td><label for="passwd" class="label"><h3>Password</h3></label></td>
+            <td><input type="password" id="passwd" class="field"></td>
         </tr>
     </table>
    </form>
-   <a href="goals.html"><input type="submit" value="Login"></a><br>
-   <a href="login.html">Forgot my password</a> <br>
-   <a href="signup.html">I don't have an account</a>
+   <a href="goals.html"><input type="submit" value="Login" class="button"></a><br>
+   <a href="login.html" class="link">Forgot my password</a>
+   <a href="signup.html" class="link">I don't have an account</a>
 </body>
 <footer>
-    <hr>
-    <p>
-        Made by:<br>
-        Gabriel Tertelici<br>
-        Uros Gluscevic
+    <p class="footerP">
+        Made by: Gabriel Tertelici, Uros Gluscevic
     </p>
 </footer>
 </html>

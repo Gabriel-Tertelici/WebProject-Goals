@@ -1,0 +1,4 @@
+Greenish bg: #3EAD9F
+Greenish header/footer: #2e7e73
+Orange accent: #FA6E32
+Orange hover: #FF824D

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
     <title>Sign-Up Page</title>
 </head>
 <header>
     <img src="resources/logo.png" alt="Goal website logo" height="75" >
-    <hr>
 </header>
 <body>
     <h1>Sign Up</h1>
@@ -15,9 +15,9 @@
         <table>
             <tr>
                 <td><label for="uname"><h3>Username</h3></label></td>
-                <td><input type="text" id="uname"></td>
+                <td><input type="text" id="uname" class="field"></td>
                 <td><label for="sex"><h3>Sex</h3></label></td>
-                <td><select name="sex" id="sex">
+                <td><select name="sex" id="sex" class="field">
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
                       <option value="Prefer not to say">Prefer not to say</option>
@@ -26,9 +26,9 @@
             </tr>
             <tr>
                 <td><label for="passwd"><h3>Password</h3></label></td>
-                <td><input type="password" id="passwd"></td>
+                <td><input type="password" id="passwd" class="field"></td>
                 <td><label for="language"><h3>Language</h3></label></td>
-                <td><select name="language" id="language">
+                <td><select name="language" id="language" class="field">
                       <option value="English">English</option>
                       <option value="Romanian">Romanian</option>
                       <option value="Montenegrin">Montenegrin</option>
@@ -36,33 +36,30 @@
             </tr>
             <tr>
                 <td><label for="passwdConfirm"><h3>Confirm Password</h3></label></td>
-                <td><input type="password" id="passwdConfirm"></td>
+                <td><input type="password" id="passwdConfirm" class="field"></td>
                 <td><label for="bio"><h3>Short Bio</h3></label></td>
-                <td rowspan="4"><textarea name="bioArea" id="bio" cols="30" rows="14"></textarea></td>
+                <td rowspan="4"><textarea name="bioArea" id="bio" cols="51" rows="12"></textarea></td>
             </tr>
             <tr>
                 <td><label for="name"><h3>Name</h3></label></td>
-                <td><input type="text" id="name"></td>
+                <td><input type="text" id="name" class="field"></td>
             </tr>
             <tr>
                 <td><label for="address"><h3>Address</h3></label></td>
-                <td><input type="text" id="address"></td>
+                <td><input type="text" id="address" class="field"></td>
             </tr>
             <tr>
                 <td><label for="email"><h3>Email</h3></label></td>
-                <td><input type="text" id="email"></td>
+                <td><input type="text" id="email" class="field"></td>
             </tr>
         </table>
-        <input type="submit" value="Create Account">
+        <input type="submit" value="Create Account" class="button">
     </form>
-    <a href="login.html">I already have an account</a> <br>
+    <a href="login.html" class="link">I already have an account</a> <br>
 </body>
 <footer>
-    <hr>
-    <p>
-        Made by:<br>
-        Gabriel Tertelici<br>
-        Uros Gluscevic
+    <p class="footerP">
+        Made by: Gabriel Tertelici, Uros Gluscevic
     </p>
 </footer>
 </html>

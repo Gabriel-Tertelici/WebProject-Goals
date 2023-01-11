@@ -4,94 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/view_goal.css">
     <title>View Goal</title>
 </head>
 <body>
     <header>
         <img src="resources/logo.png" alt="Goal website logo" height="75" >
         
-        <ul id="menu_options">
-            <li>
+        <div id="menu_options">
+           
                 <a href="goals.html">Back to My Goals</a>
-            </li>
-        </ul>
-
-        <hr>
+           
+        </div>
     </header>
 
-    <div class="goal_container">
-        <div class="goal_text">
-            <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+    <div id="main_container">
+        <div class="goal_container">
+
+            <div class="goal_top">
+                <div class="goal_text">
+                    <b id="goal_name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+                </div>
+    
+                <div class="goal_controls">
+                    <a href="create_subgoal.html" target="_blank"><button>Create Subgoal</button></a>
+                    <button>Delete Goal</button>
+                    <a  href="modifyGoal.html"><button>Modify Goal</button></a>
+                </div>
+            </div>
+
+            
+    
+            <div class="goal_info">
+                <progress value="10" max="100"></progress>
+    
+                <p>Deadline: dd/mm/yy</p>
+            </div>
+    
+            
         </div>
 
-        <div class="goal_info">
-            <progress value="10" max="100"></progress>
-
-            <p>Deadline: dd/mm/yy</p>
-        </div>
-
-        <div class="goal_controls">
-            <a href="create_subgoal.html" target="_blank"><button>Create Subgoal</button></a>
-            <button>Delete Goal</button>
-            <a href="modifyGoal.html"><button>Modify Goal</button></a>
+        <div id="subgoal_main_container">
+            <div class="subgoal_container numeric_goal">
+                <div class="subgoal_text_info">
+                    <b>Numeric Subgoal Name</b>
+                    <p>2/10 - 20% complete</p>
+                </div>
+        
+                <div class="subgoal_controls">
+                    <button>+</button>
+                    <button>-</button>
+                    <button>Delete</button>
+                </div>
+            </div>
+        
+            <div class="subgoal_container boolean_goal">
+                <div class="subgoal_text_info">
+                    <b>Boolean Subgoal Name</b>
+                    <!-- <p>what</p> -->
+                </div>
+        
+                <div class="subgoal_controls boolean_controls">
+                    <p class="goal_control_p">completed:</p>
+                    <input type="checkbox">
+                    <button class="inlineButton">Delete</button>
+                </div>
+            </div>
+        
+            <div class="subgoal_container monetary_goal">
+                <div class="subgoal_text_info">
+                    <b>Monetary Subgoal Name</b>
+                    <p>$200/$1000 - 20% complete</p>
+                </div>
+        
+                <div class="subgoal_controls monetary_controls">
+                    <input class="amount_input" type="number" placeholder="Amount...">
+                    <button class="inlineButton">Delete</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <br>
-
-    <hr>
-
-    <div class="subgoal_container numeric_goal">
-        <div class="subgoal_text_info">
-            <b>Numeric Subgoal Name</b>
-            <p>2/10 - 20% complete</p>
-        </div>
-
-        <div class="subgoal_controls">
-            <button>+</button>
-            <button>-</button>
-            <button>Delete</button>
-        </div>
-    </div>
-
-    <br>
-
-    <hr>
-
-    <div class="subgoal_container boolean_goal">
-        <div class="subgoal_text_info">
-            <b>Boolean Subgoal Name</b>
-        </div>
-
-        <div class="subgoal_controls">
-            <p>completed:</p>
-            <input type="checkbox">
-            <button>Delete</button>
-        </div>
-    </div>
-
-    <br>
-
-    <hr>
-
-    <div class="subgoal_container monetary_goal">
-        <div class="subgoal_text_info">
-            <b>Monetary Subgoal Name</b>
-            <p>$200/$1000 - 20% complete</p>
-        </div>
-
-        <div class="subgoal_controls">
-            <input type="number" placeholder="Amount...">
-            <button>Delete</button>
-        </div>
-    </div>
+    
 
     <footer>
-        <hr>
-        <p>
-            Made by:<br>
-            Gabriel Tertelici<br>
-            Uros Gluscevic
+        <p class="footerP">
+            Made by: Gabriel Tertelici, Uros Gluscevic
         </p>
     </footer>
 </body>

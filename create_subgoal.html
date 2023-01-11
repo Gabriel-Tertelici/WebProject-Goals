@@ -4,36 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/create_subgoal.css">
     <title>Create Subgoal</title>
 </head>
 <body>
     <header>
         <img src="resources/logo.png" alt="Goal website logo" height="75" >
-        <hr>
     </header>
 
     <h1>Create a new subgoal</h1>
 
     <form action="">
-        <input type="text" placeholder="Subgoal name...">
+        <input type="text" placeholder="Subgoal name..." class="field">
 
-        <select name="subgoal_type">
+        <select name="subgoal_type" class="field">
             <option value="Numeric">Numeric Subgoal</option>
             <option value="Boolean">Boolean Subgoal</option>
             <option value="Monetary">Monetary Subgoal</option>
         </select>
 
-        <input type="number" name="value" id="" placeholder="Target value...">
+        <input type="number" name="value" id="" placeholder="Target value..." class="field">
 
-        <input type="submit" value="Create Subgoal">
+        <input class="button" type="submit" value="Create Subgoal">
     </form>
 
     <footer>
-        <hr>
-        <p>
-            Made by:<br>
-            Gabriel Tertelici<br>
-            Uros Gluscevic
+        <p class="footerP">
+            Made by: Gabriel Tertelici, Uros Gluscevic
         </p>
     </footer>
 </body>
