@@ -25,6 +25,7 @@ img{
     align-items: center;
 
     margin-top: 100px;
+    margin-bottom: 75px;
 }
 
 .menu_items{
@@ -118,9 +119,10 @@ header{
     width: 100%;
 
     height: 80px;
+    z-index: 999;
 }
 footer{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     bottom: 0;
@@ -129,6 +131,7 @@ footer{
     height: 50px;
     text-align: center;
     justify-content: center;
+    z-index: 999;
 }
 .footerP{
     text-align: center;

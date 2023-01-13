@@ -137,6 +137,7 @@ body{
 
 #subgoal_main_container{
     margin-top: 30px;
+    margin-bottom: 75px;
 
     display: flex;
     flex-direction: column;
@@ -192,6 +193,7 @@ header{
     justify-content: space-between;
 
     align-items: center;
+    z-index: 999;
 
     position: fixed;
     top: 0px;
@@ -202,7 +204,7 @@ header{
 }
 
 footer{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     bottom: 0;
@@ -211,6 +213,7 @@ footer{
     height: 50px;
     text-align: center;
     justify-content: center;
+    z-index: 999;
 }
 .footerP{
     text-align: center;

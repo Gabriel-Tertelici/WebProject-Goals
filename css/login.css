@@ -56,14 +56,16 @@ a:hover{
     color: #FF824D;
 }
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     background-color:#2e7e73 ;
     height: 75px;
+
+    z-index: 999;
 }
 footer{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     bottom: 0;
@@ -72,6 +74,8 @@ footer{
     height: 50px;
     text-align: center;
     justify-content: center;
+
+    z-index: 999;
 }
 .footerP{
     text-align: center;
@@ -87,4 +91,8 @@ footer{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    
+}
+.last_link{
+    margin-bottom: 75px;
 }

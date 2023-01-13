@@ -9,7 +9,7 @@
 .goal{
     margin-left: 200px;
     margin-right: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 75px;
     margin-top: 20px;
     padding: 20px;
     border-style: solid;
@@ -42,14 +42,15 @@ body{
     font-family: Helvetica, sans-serif;
 }
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     background-color:#2e7e73 ;
     height: 75px;
+    z-index: 999;
 }
 footer{
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     bottom: 0;
@@ -58,6 +59,7 @@ footer{
     height: 50px;
     text-align: center;
     justify-content: center;
+    z-index: 999;
 }
 .footerP{
     text-align: center;
