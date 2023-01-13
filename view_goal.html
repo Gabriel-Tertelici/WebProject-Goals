@@ -24,12 +24,13 @@
             <div class="goal_top">
                 <div class="goal_text">
                     <b id="goal_name">Lorem ipsum dolor sit amet consectetur adipisicing elit.</b>
+                    <p id="goal_name">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci enim aspernatur vero nemo, nam aliquid vitae iste odit quasi, dolorem fugit magnam deserunt nulla nobis dolor quibusdam inventore? Voluptatibus, perspiciatis!</p>
                 </div>
     
                 <div class="goal_controls">
-                    <a href="create_subgoal.html" target="_blank"><button>Create Subgoal</button></a>
-                    <button>Delete Goal</button>
-                    <a  href="modifyGoal.html"><button>Modify Goal</button></a>
+                    <a href="create_subgoal.html" target="_blank"><button class="longButton">Create Subgoal</button></a>
+                    <button class="longButton">Delete Goal</button>
+                    <a  href="modifyGoal.html"><button class="longButton">Modify Goal</button></a>
                 </div>
             </div>
 
@@ -47,8 +48,11 @@
         <div id="subgoal_main_container">
             <div class="subgoal_container numeric_goal">
                 <div class="subgoal_text_info">
-                    <b>Numeric Subgoal Name</b>
+                    <b class="subgoal_name">Numeric Subgoal Name</b>
                     <p>2/10 - 20% complete</p>
+                    <p style="visibility: hidden;">.</p>
+                    <p style="visibility: hidden;">.</p>
+                    <p style="visibility: hidden;">.</p>
                 </div>
         
                 <div class="subgoal_controls">
@@ -60,8 +64,8 @@
         
             <div class="subgoal_container boolean_goal">
                 <div class="subgoal_text_info">
-                    <b>Boolean Subgoal Name</b>
-                    <!-- <p>what</p> -->
+                    <b class="subgoal_name">Boolean Subgoal Name</b>
+                    <p style="visibility: hidden;">.</p>
                 </div>
         
                 <div class="subgoal_controls boolean_controls">
@@ -73,7 +77,7 @@
         
             <div class="subgoal_container monetary_goal">
                 <div class="subgoal_text_info">
-                    <b>Monetary Subgoal Name</b>
+                    <b class="subgoal_name">Monetary Subgoal Name</b>
                     <p>$200/$1000 - 20% complete</p>
                 </div>
         

@@ -71,6 +71,13 @@ button:hover {
     background-color: #FF824D;
     color: white;
 }
+.longButton{
+    width: 170px;
+}
+.subgoal_name{
+    position: relative;
+    top: 5px;
+}
 
 a{
     text-decoration: none;
